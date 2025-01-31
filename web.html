@@ -1,33 +1,112 @@
 
+Week 1 and Week 2 Unit 1 Workbook
+Jayanthi G
+•
+Jan 16 (Edited 8:50 AM)
+10 points
+Due 10:00 AM
+Instructions to be followed:
 
+Date of Submission:
+1. Week - 1 17 JAN 2025: Demo of Practice examples - Submission of Hardcopy workbook for evaluation.
+2. Week - 2 24 JAN 2025: Unit - 1 List of Experiments (Refer page 27) - Demo and attach files in this link
 
-SELECT PN,QTY,CUSTID,(SELECT CUSTOMERNAME FROM  CUSTOMER WHERE CUSTOMERID = CUSTID ) AS CNAME FROM SALES;
+*Note: Submission of hardcopy workbook is mandatory for evaluation. This link will close automatically after 24 JAN 2025. Hence, strictly adhere to the deadlines.
+Class comments
+Your work
+Turned in
 
+sanjai.html
+HTML
 
-USING join //Both query is repeated only once 
+web.html
+HTML
 
-select * from
+dom.PNG
+Image
+Work cannot be turned in after the due date
+Private comments
+<html>
+    <head>
+       <h1> THE DARK WEB  
+    </h1> 
+    </head>
+    <style> 
+        body{
+            background-color: rgb(255, 0, 0);
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+    </style>
+    <BOdy>
+     <h4>ABOUT DARK WEB </h4> 
+     <p>
+        the dark web is the World Wide Web content that exists on darknets (overlay networks) that use the Internet but require specific software, configurations, or authorization to access.[1][2][3][4] Through the dark web, private computer networks can communicate and conduct business anonymously without divulging identifying information, such as a user's location.[5][6] The dark web forms a small part of the deep web, the part of the web not indexed by web search engines, although sometimes the term deep web is mistakenly used to refer specifically to the dark web.[7][2][8]
 
-(select pn,qty,custid from sales)a
-left join
-(select custname , customerid, from custoemr) b 
-on 
-a.custid = b.customerid;
+        The darknets which constitute the dark web include small, friend-to-friend networks, as well as large, popular networks such as Tor, Hyphanet, I2P, and Riffle operated by public organizations and individuals.[6] Users of the dark web refer to the regular web as clearnet due to its unencrypted nature.[9] The Tor dark web or onionland[10] uses the traffic anonymization technique of onion routing under the network's top-level domain suffix .onion.</p>
+   <img src="webimg.jpg" alt="y"
+       height = "550" width = "1300" />
+      <h3> TYPES OF DARK WEB </h3>
+      <menu>
+        <li>Deep web</li>
+        <li>Tor</li>
+        <li>GNUnet</li>
+        <LI>PEER</LI>
+      </menu>
+      <style>
+        table, th, td {
+          border:1px solid black;
+        }
+        </style>
+        <body>
+        
+        <h2>price list</h2>
+        
+        <table style="width:100%">
+          <tr>
+            <th>Deep web</th>
+            <th>Tor</th>
+            <th>GNUnet</th>
+            <th>PEER</th>
+          </tr>
+          <tr>
+            <td>1</td>
+            <td>2</td>
+            <td>3</td>
+            <td>4</td>
+          </tr>
+          <tr>
+            <td>LOW</td>
+            <td>very LOW</td>
+            <td>HIGH</td>
+            <td>very HIGH</td>
+          </tr>
+        </table>
+        
+        <p>LEVEL OF DANGER</p>
+        
+        </body>
+<head>
+  <meta charset="UTF-8">
+  <title>Contact Form</title>
+</head>
+<body>
 
+<h2>Contact us</h2>
 
-select sum(qty) from sales where custid = 1;
+  <label for="name">Name:</label>
+  <input type="text" id="name" name="name" required>
+  <br>
+ 
+  <label for="email">Email Address:</label>
+  <input type="email" id="email" name="email" required>
+  <br>
+ 
+  <label for="message">Message:</label>
+  <textarea id="message" name="message" required></textarea>
+  <br>
+ 
+  <button type="submit">Send</button>
+</form>
 
-b) select customerid , cn, (select sum(qty) from sales where custid = customerid) as  tot from customer;
-
-c)self join
-
-select distinct pn from sales;  // distinct returns only unique values 
-
-select distinct pn,(select count(distinct custid) from sales b where a.pn = b.pn)from sales a ;
-
-select * from 
-
-(select  from sales)a
-inner join 
-
-SELECT CustomerID,Customername,sum(Qty) from Customer;
+</body>
+ </html>
