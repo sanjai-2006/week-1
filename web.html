@@ -1,0 +1,33 @@
+
+
+
+SELECT PN,QTY,CUSTID,(SELECT CUSTOMERNAME FROM  CUSTOMER WHERE CUSTOMERID = CUSTID ) AS CNAME FROM SALES;
+
+
+USING join //Both query is repeated only once 
+
+select * from
+
+(select pn,qty,custid from sales)a
+left join
+(select custname , customerid, from custoemr) b 
+on 
+a.custid = b.customerid;
+
+
+select sum(qty) from sales where custid = 1;
+
+b) select customerid , cn, (select sum(qty) from sales where custid = customerid) as  tot from customer;
+
+c)self join
+
+select distinct pn from sales;  // distinct returns only unique values 
+
+select distinct pn,(select count(distinct custid) from sales b where a.pn = b.pn)from sales a ;
+
+select * from 
+
+(select  from sales)a
+inner join 
+
+SELECT CustomerID,Customername,sum(Qty) from Customer;
